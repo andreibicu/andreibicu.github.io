@@ -2,6 +2,10 @@
   .logo {
     animation: logo-spin infinite 20s linear;
   }
+  .kiss {
+    @apply absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2;
+    animation: kiss-transfer infinite 2.5s linear;
+  }
 }
 
 @keyframes logo-spin {
@@ -10,5 +14,14 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes kiss-transfer {
+  from {
+    @apply left-0;
+  }
+  to {
+    @apply left-full;
   }
 }
